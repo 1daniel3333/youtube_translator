@@ -12,6 +12,8 @@ on:
       - summarizer.py
       - email_sender.py
       - config.py
+  schedule:
+    - cron: '0 11 * * *'
 
 jobs:
   update-kaggle-notebook:
