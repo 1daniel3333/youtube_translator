@@ -45,6 +45,11 @@ jobs:
         run: |
           python kaggle_push.py
 
+      - name: Write YouTube cookies
+        run: echo "$YOUTUBE_COOKIES" > cookies.txt
+        env:
+          YOUTUBE_COOKIES: ${{ secrets.YOUTUBE_COOKIES }}
+
       - name: Run YouTube Summary and Email Workflow
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}

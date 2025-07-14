@@ -4,7 +4,10 @@ import whisper
 
 def use_url_check_transcript(youtube_url):
     print("用 Whisper 分析音訊...")
-    subprocess.run(f'yt-dlp -f bestaudio --extract-audio --audio-format mp3 -o "audio.%(ext)s" "{youtube_url}"', shell=True)
+    cookies_option = ''
+    if os.path.exists('cookies.txt'):
+        cookies_option = '--cookies cookies.txt '
+    subprocess.run(f'yt-dlp {cookies_option}-f bestaudio --extract-audio --audio-format mp3 -o "audio.%(ext)s" "{youtube_url}"', shell=True)
     audio_file = None
     for file in os.listdir():
         if file.endswith(".mp3"):

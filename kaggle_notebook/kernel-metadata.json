@@ -1,0 +1,17 @@
+{
+  "id": "danmahaha/youtube-translator",
+  "id_no": 87056120,
+  "title": "youtube_translator",
+  "code_file": "youtube-translator.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": []
+}
