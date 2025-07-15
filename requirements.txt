@@ -1,6 +1,5 @@
 yt-dlp
 openai-whisper
-ffmpeg
 feedparser
 pandas
 google-generativeai
